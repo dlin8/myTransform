@@ -15,8 +15,6 @@ def parseFile(fileName, screen, color, edgeMatrix, transformMatrix):
         line = line.split()
         transformMatrix = completeCommand(scriptFile, screen, color, line, edgeMatrix, transformMatrix)
         print(line[0])
-        Matrix.printMatrix(transformMatrix)
-        Matrix.printMatrix(edgeMatrix)
 
 def completeCommand(scriptFile, screen, color, commandLine, edgeMatrix, transformMatrix):
     if(commandLine[0] == 'line'):
